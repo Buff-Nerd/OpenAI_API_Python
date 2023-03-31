@@ -10,12 +10,6 @@ openai.api_key = key
 
 # My ChatbotGPT
 
-start_sequence = "\nAI:"
-
-restart_sequence = "\nHuman: "
-
-prompt="The following is a conversation with an AI assistant. The assistant is helpful, creative, clever, and very friendly. \nHuman:Do you like Cats? \nAI: Yes, I do! Cats are my favorite.\nHuman:"
-
 def openai_create(prompt):
     response = openai.Completion.create(
       model="text-davinci-003",
